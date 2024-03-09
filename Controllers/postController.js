@@ -15,11 +15,6 @@ const createPost = async (req, res) => {
             return res.status(404).json({ message: "User Not Found" })
         };
 
-        // const maxLength = 500;
-        // if (text.length > maxLength) {
-        //     return res.status(400).json({ message: `Text Must be less than ${maxLength} characters` })
-        // };
-
         const newPost = new Post({ postedBy, text, img });
         await newPost.save();
         res.status(201).json({ message: "Post Created Successfully", newPost })

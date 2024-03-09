@@ -6,7 +6,7 @@ Welcome, It is a social media-like application built with Node.js, Express, and 
 ### Configuration
 MONGODB_URL=Your MongoDBURL |
 JWT_SECRET=your_secret_key_here |
-PORT=3000 |
+PORT=3000 
 
 ### API Documentation
 
